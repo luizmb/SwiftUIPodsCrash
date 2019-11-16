@@ -1,0 +1,44 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+.*/DerivedData/
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/test_output
+fastlane/artifacts/*
+fastlane/report.xml
+artifacts/*.mobileprovision
+artifacts/*.cer
+LocalPods/RFLogging/RFLogging/Resources/Settings.bundle/settings.json
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+**/.swiftpm/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# AppCode
+.idea/
+LocalPods/RFSDK/.idea/
+
+# Playgrounds
+timeline.xctimeline
+
+# i18n temporary stuff
+Raumfeld/i18n/
+
