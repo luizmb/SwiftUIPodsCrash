@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MainApp.xcodeproj">
+      location = "group:vendor/RxSwift/Rx.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "container:MainApp.xcodeproj">
    </FileRef>
 </Workspace>

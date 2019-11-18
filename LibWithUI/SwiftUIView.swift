@@ -6,13 +6,31 @@
 //  Copyright © 2019 Luiz Rodrigo Martins Barbosa. All rights reserved.
 //
 
+import RxSwift
 import SwiftUI
 
+var disposeBag = DisposeBag()
+
 public struct SwiftUIView: View {
+    @State private var number: Int = 0
     public init() { }
     
     public var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World! \(number)")
+            .onAppear {
+                Observable<Int>.merge([
+                    .just(1),
+                    .create { subscriber in
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            subscriber.onNext(42)
+                        }
+
+                        return Disposables.create()
+                    }
+                ]).subscribe(onNext: { number in
+                    self.number = number
+                }).disposed(by: disposeBag)
+            }
     }
 }
 
