@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		D5F6C455237F961F002A45D8 /* LibWithUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F6C44E237F961F002A45D8 /* LibWithUI.framework */; };
 		D5F6C456237F961F002A45D8 /* LibWithUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5F6C44E237F961F002A45D8 /* LibWithUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5F6C45C237F965A002A45D8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C45B237F965A002A45D8 /* SwiftUIView.swift */; };
+		D6FF88DC2382B1DD00A11DCC /* PreviewsFromTheFrameworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FF88DB2382B1DD00A11DCC /* PreviewsFromTheFrameworks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D5F6C451237F961F002A45D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F6C45B237F965A002A45D8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		D692C4E936FAD43C12EFEA8C /* Pods-LibWithUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibWithUI.release.xcconfig"; path = "Target Support Files/Pods-LibWithUI/Pods-LibWithUI.release.xcconfig"; sourceTree = "<group>"; };
+		D6FF88DB2382B1DD00A11DCC /* PreviewsFromTheFrameworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewsFromTheFrameworks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				D5F6C435237F94BA002A45D8 /* AppDelegate.swift */,
-				D5F6C437237F94BA002A45D8 /* SceneDelegate.swift */,
-				D5F6C439237F94BA002A45D8 /* ContentView.swift */,
 				D5F6C43B237F94BE002A45D8 /* Assets.xcassets */,
-				D5F6C440237F94BE002A45D8 /* LaunchScreen.storyboard */,
+				D5F6C439237F94BA002A45D8 /* ContentView.swift */,
 				D5F6C443237F94BE002A45D8 /* Info.plist */,
+				D5F6C440237F94BE002A45D8 /* LaunchScreen.storyboard */,
 				D5F6C43D237F94BE002A45D8 /* Preview Content */,
+				D6FF88DB2382B1DD00A11DCC /* PreviewsFromTheFrameworks.swift */,
+				D5F6C437237F94BA002A45D8 /* SceneDelegate.swift */,
 			);
 			path = MainApp;
 			sourceTree = "<group>";
@@ -156,7 +159,6 @@
 				4EAAEBDB808CD42A8767DBB5 /* Pods-MainApp.debug.xcconfig */,
 				0D8CECFDA089E6E40A237DFC /* Pods-MainApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -342,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F6C436237F94BA002A45D8 /* AppDelegate.swift in Sources */,
+				D6FF88DC2382B1DD00A11DCC /* PreviewsFromTheFrameworks.swift in Sources */,
 				D5F6C438237F94BA002A45D8 /* SceneDelegate.swift in Sources */,
 				D5F6C43A237F94BA002A45D8 /* ContentView.swift in Sources */,
 			);
